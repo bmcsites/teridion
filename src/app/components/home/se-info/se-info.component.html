@@ -1,0 +1,18 @@
+<ng-template #statusModal let-c="close" let-d="dismiss" style="width: auto">
+  <div class="modal-header">
+    <h4 class="modal-title">person info</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="info-box" *ngIf="q">
+    <h4><b>name:</b> {{q.name}}</h4>
+    <h4><b>last name:</b> {{q.lname}}</h4>
+    <h4><b>address:</b> {{q.address}}</h4>
+    <h4><b>age:</b> {{q.age}}</h4>
+    <h4><b>city:</b> {{q.city}}</h4>
+    <h4><b>state:</b> {{q.state}}</h4>
+    <h4><b>tel:</b> {{q.tel}}</h4>
+    <h4><b>zip:</b> {{q.zip}}</h4>
+  </div>
+</ng-template>
